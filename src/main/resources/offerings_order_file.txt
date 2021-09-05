@@ -1,0 +1,4 @@
+Name  Type  Size  Quantity  Price
+Coffee  BEVERAGE  small  4  2.50
+Bacon Roll  SNACKS  NA  1  4.50
+Freshly Squeezed Orange Juice  BEVERAGE  litre  1  15.8

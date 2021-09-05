@@ -1,0 +1,4 @@
+Name  Quantity  Price
+Extra Milk  1  0.30
+Foamed Milk  1  0.50
+Special Roast Coffee  1  0.90

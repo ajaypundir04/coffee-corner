@@ -1,0 +1,6 @@
+Name  Type  Size  Quantity  Price
+Coffee  BEVERAGE  small  1  2.50
+Coffee  BEVERAGE  medium  1  3.00
+Coffee  BEVERAGE  large  1  3.50
+Bacon Roll  SNACKS  na  1  4.50
+Freshly Squeezed Orange Juice  BEVERAGE  litre  1  15.8
