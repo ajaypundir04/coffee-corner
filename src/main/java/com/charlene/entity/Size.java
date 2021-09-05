@@ -5,6 +5,10 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+/**
+ * @author Ajay Singh Pundir
+ * Use to handle the size of offering.
+ */
 public enum Size {
     small, medium, large, litre, not_applicable;
 
@@ -14,6 +18,5 @@ public enum Size {
     public static Size fromString(final String name) {
         return NAME_MAP.getOrDefault(name, not_applicable);
     }
-
 
 }

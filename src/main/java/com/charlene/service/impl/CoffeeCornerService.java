@@ -10,6 +10,10 @@ import com.charlene.service.OrderService;
 import java.util.List;
 import java.util.Objects;
 
+/**
+ * @author Ajay Singh Pundir
+ * Use to handle all the coffee corner operations.
+ */
 public class CoffeeCornerService {
 
     private final OrderService orderService;
@@ -22,6 +26,13 @@ public class CoffeeCornerService {
         this.invoice = new Invoice();
     }
 
+    /**
+     * Used to place the order and generate invoice.
+     *
+     * @param offerings @{@link Offering} list of offerings
+     * @param extras    @{@link Extra} list of extras
+     * @return @{@link Invoice} invoice generated
+     */
     public Invoice placeOrder(List<Offering> offerings, List<Extra> extras) {
         generateInvoice(offerings, extras);
         return this.invoice;

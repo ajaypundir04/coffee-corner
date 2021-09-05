@@ -7,6 +7,10 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Objects;
 
+/**
+ * @author Ajay Singh Pundir
+ * Use to handle the order.
+ */
 public class Order {
     private List<Offering> offerings;
     private List<Extra> extras;

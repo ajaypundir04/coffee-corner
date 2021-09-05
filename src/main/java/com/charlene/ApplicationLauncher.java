@@ -1,10 +1,11 @@
 package com.charlene;
 
 
-import com.charlene.exception.CoffeeCornerException;
 import com.charlene.entity.Extra;
-import com.charlene.model.Menu;
 import com.charlene.entity.Offering;
+import com.charlene.exception.CoffeeCornerException;
+import com.charlene.model.Invoice;
+import com.charlene.model.Menu;
 import com.charlene.model.Order;
 import com.charlene.output.ConsoleLogger;
 import com.charlene.output.Logger;
@@ -42,12 +43,23 @@ public class ApplicationLauncher {
     private void launchApplication(String menuOfferingsPath, String menuExtrasPath,
                                    String orderOfferingsPath, String orderExtrasPath) {
         try {
+            // Input Parser loaded
             parser = loadParser();
+            // Output Logger loaded
             logger = loadConsoleLogger();
+
+            // Menu Loaded
             menu = loadMenu(parseOfferings(menuOfferingsPath), parseExtras(menuExtrasPath));
+            // Order Loaded
             order = loadOrder(parseOfferings(orderOfferingsPath), parseExtras(orderExtrasPath));
+
+            // CoffeeCorner Service initialized
             coffeeCornerService = new CoffeeCornerService(new OrderServiceImpl(), new FreeBeverageBonus(new FreeExtraBonus()));
-            logger.printInvoice(coffeeCornerService.placeOrder(order.getOfferings(), order.getExtras()));
+            // Order placed
+            Invoice invoice = coffeeCornerService.placeOrder(order.getOfferings(), order.getExtras());
+
+            //Invoice Printing
+            logger.printInvoice(invoice);
 
         } catch (Exception e) {
             throw new CoffeeCornerException(e);

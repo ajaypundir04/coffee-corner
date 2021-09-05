@@ -2,6 +2,10 @@ package com.charlene.entity;
 
 import java.util.Objects;
 
+/**
+ * @author Ajay Singh Pundir
+ * Use to handle the offering.
+ */
 public class Offering extends Item {
 
     private Size size;

@@ -9,6 +9,10 @@ import com.charlene.service.CustomerBonus;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * @author Ajay Singh Pundir
+ * Use to evaluate the free beverage bonus.
+ */
 public class FreeBeverageBonus implements CustomerBonus {
 
     private final CustomerBonus nextBonusProcessor;
@@ -17,6 +21,12 @@ public class FreeBeverageBonus implements CustomerBonus {
         this.nextBonusProcessor = nextBonusProcessor;
     }
 
+    /**
+     * Evaluate if the order is eligible for free beverage.
+     *
+     * @param order @{@link Order} order needs to be evaluated
+     * @return @{@link Double} discount
+     */
     @Override
     public double evaluateBonus(Order order) {
         double discount = 0;

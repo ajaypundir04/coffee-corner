@@ -1,5 +1,9 @@
 package com.charlene.entity;
 
+/**
+ * @author Ajay Singh Pundir
+ * Use to handle the extras.
+ */
 public class Extra extends Item {
 
     public Extra(String name, int quantity, double price) {

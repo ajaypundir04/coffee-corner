@@ -1,5 +1,9 @@
 package com.charlene.constants;
 
+/**
+ * @author Ajay Singh Pundir
+ * Handles the constants for the application.
+ */
 public class ApplicationConstants {
     public final static String BEVERAGE = "BEVERAGE";
     public final static String SNACK = "SNACK";

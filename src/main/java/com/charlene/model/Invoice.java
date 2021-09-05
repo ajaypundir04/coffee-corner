@@ -2,6 +2,10 @@ package com.charlene.model;
 
 import java.util.Objects;
 
+/**
+ * @author Ajay Singh Pundir
+ * Use to handle the invoice.
+ */
 public class Invoice {
     private Order order;
     private double amount;
