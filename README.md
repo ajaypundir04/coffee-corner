@@ -27,3 +27,6 @@
 1. ApplicationLauncher is the main entry for application.
 2. we can execute the command `coffee_corner <offerings_menu_file_path> <extras_menu_file_path> <offerings_order_file_path> <extras_order_file_path>` to run the application.
 3. `bin/setup` for build and test the application.
+
+### Output
+![Screenshot](Output.png)
