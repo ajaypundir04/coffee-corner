@@ -1,8 +1,0 @@
-#!/bin/bash
-if [ "$1" == "" ] || [ "$2" == "" ] || [ "$3" == "" ] || [ "$4" == "" ];
-then
-    echo "Missing input file parameter for slab details and invoice details"
-    echo "correct usage: coffee_corner <offerings_menu_file_path> <extras_menu_file_path> <offerings_order_file_path> <extras_order_file_path>"
-else
-    ./gradlew run --args="$1 $2 $3 $4"
-fi
